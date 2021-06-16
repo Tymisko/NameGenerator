@@ -1,0 +1,16 @@
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.exe
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.deps.json
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.runtimeconfig.json
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.runtimeconfig.dev.json
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.dll
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\ref\NameGenerator.dll
+O:\repositories\NameGenerator\src\NameGenerator\bin\Debug\net5.0\NameGenerator.pdb
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.csproj.AssemblyReference.cache
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.GeneratedMSBuildEditorConfig.editorconfig
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.AssemblyInfoInputs.cache
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.AssemblyInfo.cs
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.csproj.CoreCompileInputs.cache
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.dll
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\ref\NameGenerator.dll
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.pdb
+O:\repositories\NameGenerator\src\NameGenerator\obj\Debug\net5.0\NameGenerator.genruntimeconfig.cache
