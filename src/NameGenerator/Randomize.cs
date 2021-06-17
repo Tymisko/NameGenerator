@@ -2,7 +2,7 @@ using System;
 
 namespace NameGenerator
 {
-    internal class Randomize 
+    public class Randomize 
     {
         public static int FirstNameLength(int minLength = 2, int maxLength = 15)
         {

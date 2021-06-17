@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "NameGenerator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/NameGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NameGenerator.dll": {}
+        }
       }
     }
   },
@@ -5906,11 +5916,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "NameGenerator/1.0.0": {
+      "type": "project",
+      "path": "../../src/NameGenerator/NameGenerator.csproj",
+      "msbuildProject": "../../src/NameGenerator/NameGenerator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.9.4",
+      "NameGenerator >= 1.0.0",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -5922,11 +5938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "O:\\repositories\\NameGenerator\\test\\test.csproj",
-      "projectName": "test",
-      "projectPath": "O:\\repositories\\NameGenerator\\test\\test.csproj",
+      "projectUniqueName": "O:\\repositories\\NameGenerator\\test\\NameGenerator.Tests\\NameGenerator.Tests.csproj",
+      "projectName": "NameGenerator.Tests",
+      "projectPath": "O:\\repositories\\NameGenerator\\test\\NameGenerator.Tests\\NameGenerator.Tests.csproj",
       "packagesPath": "C:\\Users\\Jan\\.nuget\\packages\\",
-      "outputPath": "O:\\repositories\\NameGenerator\\test\\obj\\",
+      "outputPath": "O:\\repositories\\NameGenerator\\test\\NameGenerator.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5942,7 +5958,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "O:\\repositories\\NameGenerator\\src\\NameGenerator\\NameGenerator.csproj": {
+              "projectPath": "O:\\repositories\\NameGenerator\\src\\NameGenerator\\NameGenerator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

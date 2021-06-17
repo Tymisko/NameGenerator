@@ -1,6 +1,6 @@
 namespace NameGenerator
 {
-    class Generate 
+    public class Generate 
     {
         public static string Name()
         {
