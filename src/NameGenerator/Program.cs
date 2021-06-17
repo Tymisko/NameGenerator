@@ -9,39 +9,33 @@ namespace NameGenerator
         {
             var letters = new Alphabet();
 
-            Random rd = new Random();
-            int rd_firstNameLen = rd.Next(2, 15);
-            int rd_lastNameLen = rd.Next(3, rd_firstNameLen);           
+            int fNameLen = Randomize.FirstNameLength();
+            int lNameLen = Randomize.LastNameLength(fNameLen);               
 
-            string firstName = Char.ToString(letters.consonants[rd.Next(0, letters.consonants.Count)]).ToUpper();
-            string lastName = Char.ToString(letters.consonants[rd.Next(0, letters.consonants.Count)]).ToUpper();
+            string firstName = Randomize.RandomConsonant().ToUpper();
+            string lastName = Randomize.RandomConsonant().ToUpper();
 
-            int vowelRandomIndex, consonantRandomIndex;
-            while (firstName.Length != rd_firstNameLen)
+            while (firstName.Length != fNameLen)
             {
-                if( letters.vowels.Contains(firstName[firstName.Length-1]))
+                if(letters.vowels.Contains(firstName[firstName.Length-1]))
                 {
-                    consonantRandomIndex = rd.Next(0, letters.consonants.Count);
-                    firstName += letters.consonants[consonantRandomIndex];
+                    firstName += Randomize.RandomConsonant();
                 }
                 else
-                {
-                    vowelRandomIndex = rd.Next(0,  letters.vowels.Count);
-                    firstName +=  letters.vowels[vowelRandomIndex];
+                { 
+                    firstName += Randomize.RandomVowel();
                 }
             }
 
-            while (lastName.Length != rd_lastNameLen)
+            while (lastName.Length != lNameLen)
             {
                 if( letters.vowels.Contains(lastName[lastName.Length-1]))
                 {
-                    consonantRandomIndex = rd.Next(0, letters.consonants.Count);
-                    lastName += letters.consonants[consonantRandomIndex];
+                    lastName += Randomize.RandomConsonant();
                 }
                 else
                 {
-                    vowelRandomIndex = rd.Next(0,  letters.vowels.Count);
-                    lastName +=  letters.vowels[vowelRandomIndex];
+                    lastName += Randomize.RandomVowel();
                 }
             }
             System.Console.WriteLine($"{firstName} {lastName}");
